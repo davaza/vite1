@@ -1,9 +1,9 @@
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { Link, Route, Switch } from 'react-router-dom'
 import { UsersPage } from '../pages'
 import MainPage from '../MainPage'
 
 export const Router = () => {
-    return <BrowserRouter><Switch>
+    return <Switch>
          <Route
         exact
         path="/"
@@ -18,5 +18,4 @@ export const Router = () => {
         <Link to="/users">Пользователи</Link>
         </>)}/>
     </Switch>
-    </BrowserRouter>
 }
